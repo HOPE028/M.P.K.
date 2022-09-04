@@ -32,8 +32,8 @@ var icon = document.getElementById('light')
 icon.onclick = function () {
   document.body.classList.toggle('dark-theme')
   if (document.body.classList.contains('dark-theme')) {
-    icon.src = 'pictures/sun.png'
+    icon.src = '../pictures/sun.png'
   } else {
-    icon.src = 'pictures/moon.png'
+    icon.src = '../pictures/moon.png'
   }
 }
