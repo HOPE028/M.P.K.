@@ -549,6 +549,11 @@ ul {
   text-decoration: underline;
 }
 
+.text-about img {
+  max-width: 100%;
+  max-height: 75vh;
+}
+
 .img-about {
   width: 30%;
   /* display: flex;
