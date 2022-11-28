@@ -33,6 +33,7 @@
   --lighter-blue-color: rgb(0, 166, 255);
   --grey-text-box: #dadada;
   --check-mark: #004aad;
+  --highlightedWords: rgb(92, 228, 255);
 }
 
 .dark-theme {
@@ -42,6 +43,7 @@
   --background-secondary-color: #f0f0f0;
   --lighter-blue-color: rgb(0, 166, 255);
   --grey-text-box: #868686;
+  --highlightedWords: rgb(82, 223, 255);
 }
 
 body {
@@ -986,7 +988,7 @@ ul {
 /* End of Location */
 
 .highlightedWords {
-  color: rgb(111, 231, 255);
+  color: var(--highlightedWords);
   transition: all 0.3s ease-in;
 }
 

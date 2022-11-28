@@ -143,11 +143,13 @@
         data-aos-delay="300"
       >
         <div class="text-about">
-          <h1 class="section-header">What is it?</h1>
+          <h1 class="section-header">Summary</h1>
           <p>
             <b>
-              Enhanced Mobility Mechanical Assistance System: Reducing
-              Overexertion Injuries in The Manual Workforce
+              <span class="highlightedWords"
+                >Enhanced Mobility Mechanical Assistance System: Reducing
+                Overexertion Injuries in The Manual Workforce</span
+              >
             </b>
           </p>
           <p>
@@ -172,6 +174,351 @@
     </div>
 
     <!-- End of about page -->
+
+    <div class="space-between-sections"></div>
+
+    <div class="section-container">
+      <div
+        class="content-about"
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
+        <div class="text-about">
+          <h1 class="section-header">Why</h1>
+          <p>
+            As civilization carries on growing to support its increasing
+            population, the need for manual work only increases as there are
+            more houses to build, packages to ship, and materials to move.
+            Nevertheless, along with that work, comes the risk of strain and
+            injuries on the human body: Every year in the United States, 255'000
+            manual work labourers suffer from an injury resulting from
+            overexertion.
+
+            <br />
+            <br />
+
+            The concerning number of injuries generally stems from pushing,
+            lifting, and carrying objects with improper technique. However, the
+            reason for the improper technique often isn’t due to lack of proper
+            training but rather due to the object being too heavy to use proper
+            form on, forcing workers to place themselves in harm’s way. Using
+            the incredible technological advancements humans have made, however,
+            we have received the ability to eliminate this problem by enhancing
+            the user's leg strength and mobility. Through the increase in
+            strength, the user can once again return to focusing on their form
+            knowing that they have the power to do so.
+
+            <br />
+            <br />
+
+            To solve the problem affecting millions of people worldwide, we came
+            up with an active lower-body exoskeleton that uses pneumatic power
+            to extend and retract the leg with a superhuman amount of force.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="space-between-sections"></div>
+
+    <div class="section-container">
+      <div
+        class="content-about"
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
+        <div class="text-about">
+          <h1 class="section-header">How</h1>
+          <p>
+            To supply additional power to the user to reduce overexertion
+            injuries, we developed a rough idea for an exoskeleton that
+            ultimately required four different systems: Frame, Air delivery,
+            Battery, and Control.
+
+            <br />
+            <br />
+
+            We would start by brainstorming the parameters required for each
+            system. Then, we would research different ways to achieve these
+            parameters through different methods. One reason why it was
+            important to find different solutions was due to finding the optimal
+            solution. For example, when designing, we had to decide on an
+            actuator type to power the exoskeleton. We had three possible
+            solutions (pneumatic, electric motor, and hydraulic) and with them,
+            we determined the best powertrain through calculations. In that
+            specific case, our calculations were to find the actuator with the
+            maximum power output, lowest electricity consumption, and minimal
+            weight.
+
+            <br />
+            <br />
+
+            Once we had ample research, we moved on to design. When possible, we
+            would model in a 3d virtual environment to best understand the
+            interactions of our design with other systems. Another benefit of
+            modelling was the available stress and displacement tests that would
+            inform us of any inadequacies.
+
+            <br />
+            <br />
+
+            Next, we consulted professors. Through this method, we would be
+            aware of any oversights we may have made and would be notified of
+            any better solutions.
+
+            <br />
+            <br />
+
+            Finally, we would choose the material to prepare for manufacturing.
+            Strength to weight ratio was always the focus. For example, we chose
+            Aluminum 6061-T6 for the material.
+
+            <br />
+            <br />
+
+            After all systems were completed and attached, we tested the
+            performance of the exoskeleton through different experiments to
+            optimize performance.
+
+            <br />
+            <br />
+
+            To find the most accurate sources of information, we focused on
+            receiving our knowledge from university research papers,
+            manufacturer datasheets, and when possible, patents. Through this
+            methodology, we were able to be confident that our solutions and
+            calculations would yield the best results.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="space-between-sections"></div>
+
+    <div class="section-container">
+      <div
+        class="content-about"
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
+        <div class="text-about">
+          <h1 class="section-header">What</h1>
+          <p>
+            <b> How It Works: </b>
+            <br />
+            <br />
+
+            BATTERY/POWER:
+
+            <br />
+            <br />
+
+            The main design criteria was high energy density to minimize weight.
+            To achieve that, we leveraged the latest lithium-ion technology. By
+            placing the batteries (18650 cells) in a 7 series 3 parallel design,
+            we achieved a 250 Wh battery weighing 1kg. We then used a 24V
+            stepdown converter for the air compressor and microcomputer.
+
+            <br />
+            <br />
+
+            AIR DELIVERY SYSTEM:
+
+            <br />
+            <br />
+
+            The air delivery system actively pumps air into the pneumatic
+            cylinders. To control the flow of air, we developed a design that
+            had an air compressor pump air into an air tank that would branch
+            off into the two legs. On the legs, there would be two types of
+            solenoid valves that control the flow using signals they receive
+            from the computer to either let the air go through or not. The first
+            layer of solenoid valves works off Pulse Width Modulation to control
+            airflow through the tank (More details on P.W.M in the controls
+            section) while the second layer uses P.W.M. to exhaust air when
+            necessary.
+
+            <br />
+            <br />
+            Control: (Software:
+            <a href="https://github.com/HOPE028/EMMAS" target="_blank"
+              >https://github.com/HOPE028/EMMAS</a
+            >)
+
+            <br />
+            <br />
+
+            The microcomputer's role is to analyze the user’s input and send
+            signals to the solenoid valves. To do so, the microcomputer sends 0
+            and 1 bits in the form of voltage to control the valve’s state. The
+            valve’s state is what decides if air goes through or not. Building
+            on top of that, we used the P.W.M framework for precise power
+            control. To utilize it, we send signal changes at a high frequency
+            to regulate the flow rate. All inputs are received from buttons and
+            switches. Through the inputs, the user can change what mode the
+            exoskeleton is in which affects how the exoskeleton behaves.
+
+            <br />
+            <br />
+
+            FRAME:
+
+            <br />
+            <br />
+
+            During the motion of squatting, the distance between the hip and
+            ankle reduces. By being able to manipulate the distance between
+            these two leg parts, we can mimic the leg’s movement. The pneumatic
+            cylinder allows us to do exactly that through the manipulation of
+            its own length by pumping air into its chambers when the ends are
+            attached to the ankle and hip.
+
+            <br />
+            <br />
+
+            When the pneumatic cylinder is compressing, however, it has the
+            ability to buckle the knee. In response, we created a frame for the
+            pneumatic cylinder to be attached to. The frame ensures that the
+            force from the pneumatic cylinder is limited to one degree of
+            freedom and that frame and pneumatic cylinder do not slide relative
+            to the body.
+
+            <br />
+            <br />
+
+            <b> Testing: (Results In SO-WHAT Pictures)</b>
+
+            <br />
+            <br />
+
+            Power output under constant load:
+
+            <br />
+
+            We tested constant load performance by attaching one end of the
+            pneumatic cylinder to a scale and the other end to a solid base.
+            Through 40 different trials at 5 different pressures inside the
+            air-delivery system, we received performance data.
+
+            <br />
+            <br />
+
+            Actuation time:
+
+            <br />
+
+            We tested actuation time by setting the system at 60psi and
+            measuring the time between the user turning on the power and the
+            time it took for the system to start providing power.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="space-between-sections"></div>
+
+    <div class="section-container">
+      <div
+        class="content-about"
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
+        <div class="text-about">
+          <h1 class="section-header">What's Next</h1>
+          <p>
+            The possibilities for improving the exoskeleton are endless. Some
+            notable optimizations would be a slightly modified frame with a more
+            ergonomic design, a more simple user interface that uses artificial
+            intelligence to predict the user's needs, and custom air compressors
+            and pneumatic cylinders to reduce weight and size.
+
+            <br />
+            <br />
+
+            We will work on these future improvements by using what we have
+            learnt over the span of this project such as consulting experts when
+            necessary, modelling more precise and thought out designs, and
+            having backup plans if ever something does not work out.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="space-between-sections"></div>
+
+    <div class="section-container">
+      <div
+        class="content-about"
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
+        <div class="text-about">
+          <h1 class="section-header">References:</h1>
+          <p>
+            <b> Research:</b>
+
+            <br />
+            <br />
+
+            Taokang X., Yong Z., Ligang Q., Lin L., Chao G., (January 2022),
+            Weight-assisted exoskeleton knee joint plunger cylinder control
+            optimization,
+            <a
+              href="https://www.sciencedirect.com/science/article/pii/S1018363921001707"
+              target="_blank"
+              >https://www.sciencedirect.com/science/article/pii/S1018363921001707</a
+            >
+
+            <br />
+            <br />
+
+            Fatai S., Hwa J. Y., Raja A. R. G, Norhafizan A., (November 2019),
+            Design and control of a wearable lower-body exoskeleton for
+            squatting and walking assistance in manual handling works,
+            <a
+              href="https://www.sciencedirect.com/science/article/abs/pii/S0957415819301059"
+              target="_blank"
+              >https://www.sciencedirect.com/science/article/abs/pii/S0957415819301059</a
+            >
+
+            <br />
+            <br />
+
+            <b> Injury Data:</b>
+
+            <br />
+            <br />
+
+            NSC, (April 2022), Top Work-related Injury Causes,
+            <a
+              href="https://injuryfacts.nsc.org/work/work-overview/top-work-related-injury-causes/"
+              target="_blank"
+              >https://injuryfacts.nsc.org/work/work-overview/top-work-related-injury-causes/</a
+            >
+
+            <br />
+            <br />
+
+            Product Data: Wenzhou Ang Rui Machinery Co., Ltd, (April 2022)
+            <a
+              href="https://www.alibaba.com/product-detail/SC-series-Air-Cylinder-Double-Acting_60584234258.htmlspm=a2700.shop_plgr.41413.30.3295631eXJSyQs"
+              target="_blank"
+              >https://www.alibaba.com/product-detail/SC-series-Air-Cylinder-Double-Acting_60584234258.htmlspm=a2700.shop_plgr.41413.30.3295631eXJSyQs</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
 
     <div class="space-between-sections"></div>
 
