@@ -1172,3 +1172,12 @@ ul {
 }
 
 /* End of Pictures */
+
+.highlightedWords {
+  color: rgb(111, 231, 255);
+  transition: all 0.3s ease-in;
+}
+
+.highlightedWords:hover {
+  color: var(--lighter-blue-color);
+}
