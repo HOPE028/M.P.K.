@@ -675,6 +675,10 @@ ul {
   row-gap: 40px;
 }
 
+#current-projects {
+  grid-template-columns: 1fr;
+}
+
 .project {
   position: relative;
   aspect-ratio: 16/9;
@@ -706,6 +710,7 @@ ul {
   height: 100%;
   width: 100%;
   background: var(--seconday-color);
+  text-align: center;
 }
 
 #non-blank {
@@ -755,7 +760,7 @@ ul {
 @media screen and (max-width: 800px) {
   .graph-projects {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
   }
 
   .graph-projects {
