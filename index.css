@@ -1008,7 +1008,7 @@ ul {
   width: 30px;
   border: 2px solid var(--primary-color);
   position: absolute;
-  left: 50%;
+  /* left: 50%; */
   bottom: 20px;
   border-radius: 50px;
   animation: appear 3s ease-out;
