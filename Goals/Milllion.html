@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown to July 20th, 2024</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      #countdown {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="countdown">Loading...</div>
+
+    <script>
+      function updateCountdown() {
+        const now = new Date()
+        const targetDate = new Date('2024-07-20T00:00:00')
+
+        // Calculate the difference in milliseconds
+        const diff = targetDate - now
+
+        // Convert milliseconds to days, hours, minutes, and seconds
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+        const hours = Math.floor(
+          (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        )
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000)
+
+        // Display the result
+        if (diff > 0) {
+          document.getElementById(
+            'countdown'
+          ).innerText = `${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds until July 20th, 2024`
+        } else {
+          document.getElementById(
+            'countdown'
+          ).innerText = `July 20th, 2024 has passed!`
+        }
+      }
+
+      updateCountdown() // Call immediately on page load
+      setInterval(updateCountdown, 1000) // Update every second
+    </script>
+  </body>
+</html>
