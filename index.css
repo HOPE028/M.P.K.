@@ -639,9 +639,7 @@ ul {
   #text-skills {
     font-size: calc(var(--section-header-font-size-small) - 5px);
   }
-}
 
-@media screen and (max-width: 350px) {
   .skill p {
     font-size: var(--p-about-font-size-very-small);
     margin-left: 10%;
@@ -651,6 +649,7 @@ ul {
     font-size: calc(var(--p-about-font-size-very-small) + 10px);
   }
 }
+
 
 /* End of Skills Page */
 
