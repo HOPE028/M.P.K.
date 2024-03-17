@@ -65,6 +65,11 @@ body {
 
 /* General */
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .section-header {
   color: var(--primary-color);
   font-size: var(--section-header-font-size-big);
