@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./projects_styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/c2536198b5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" href="../pictures/M.P.K.png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JNFR9WE9ED"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-JNFR9WE9ED')
+    </script>
+
+    <title>M.P.K.</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+
+    <div class="container-navbar">
+      <div class="content-navbar">
+        <div class="logo">
+          <a href="../">M.P.K.</a>
+        </div>
+        <div class="toggle-navbar" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="menu-navbar">
+          <li class="btn-navbar">
+            <a
+              href="https://pathfinder-edu.netlify.app/"
+              target="_blank"
+              >Live</a
+            >
+          </li>
+          <li class="btn-navbar">
+            <a href="#not-available" id="no-show" target="_blank"
+              >Code</a
+            >
+          </li>
+          <li class="btn-navbar">
+            <a href="#about">About</a>
+          </li>
+          <li class="btn-navbar">
+            <a href="#stack">Stack</a>
+          </li>
+          <li class="btn-navbar">
+            <a href="#pictures">Pictures</a>
+          </li>
+        </ul>
+        <div class="light-icon">
+          <img src="../pictures/moon.png" alt="" id="light" />
+        </div>
+      </div>
+    </div>
+
+    <!-- End of NavBar -->
+
+    <!-- Social Media -->
+
+    <div class="container-social">
+      <div class="content-social">
+        <a
+          href="https://github.com/HOPE028"
+          class="item-social"
+          target="_blank"
+        >
+          <img src="../pictures/github.png" alt="GitHub logo" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mohammad-pasha-khoshkebari/"
+          class="item-social"
+          target="_blank"
+        >
+          <img src="../pictures/linkedIn.png" alt="LinkedIn logo" />
+        </a>
+        <a
+          href="https://x.com/PashaHasHOPE"
+          class="item-social"
+          target="_blank"
+        >
+          <img src="../pictures/twitter.png" alt="Twitter logo" />
+        </a>
+        <a
+          href="https://www.instagram.com/m._pasha_k/"
+          class="item-social"
+          target="_blank"
+        >
+          <img src="../pictures/instagram.png" alt="Instagram logo" />
+        </a>
+      </div>
+    </div>
+
+    <!-- End of Social Media -->
+
+    <!-- Main Page -->
+
+    <div class="container">
+      <div class="content-main">
+        <h2 class="sub-title animate-main-page">Project:</h2>
+        <h1 class="title animate-main-page">Pathfinder</h1>
+        <div class="link-area-main">
+          <a
+            href="https://pathfinder-edu.netlify.app/"
+            class="link-main no-left-space"
+            id="live-icon"
+            target="_blank"
+          >
+            <i class="fa-brands fa-internet-explorer"></i>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-down"></div>
+    </div>
+    <!-- End of Main Page -->
+
+    <!-- About page -->
+
+    <div class="location-of-section">
+      <div class="location" id="about"></div>
+    </div>
+
+    <div class="section-container">
+      <div
+        class="content-about"
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
+        <div class="text-about">
+          <h1 class="section-header">What is it?</h1>
+          <p>
+            Pathfinder is an
+            <span class="highlightedWords">AI-powered study platform</span>
+            with two modes designed to help students truly learn, not just get
+            answers.
+            <br /><br />
+            <span class="highlightedWords">Pathfinder Workspace</span> lets you
+            upload course materials (lecture slides, textbook PDFs) and creates
+            an interactive workspace around them. The backend chunks your PDFs,
+            embeds them with OpenAI, and stores vectors in Pinecone. When you
+            ask a question, it retrieves the most relevant sections from your
+            own materials and sends them to Gemini to generate a grounded
+            answer. You work on a
+            <span class="highlightedWords">Tldraw canvas</span> (whiteboard or
+            PDF annotation) with an AI chat panel that can see what you've
+            drawn, accept voice input, and reference your uploaded content.
+            <br /><br />
+            <span class="highlightedWords">In The Zone</span> is a focused
+            problem-solving mode. You upload an assignment or problem set, and a
+            single Gemini vision call extracts every individual question. At
+            extraction time, each question is embedded and matched against your
+            course materials in Pinecone, so relevant context is
+            <span class="highlightedWords">pre-fetched and cached</span>. Each
+            question gets its own canvas workspace that auto-saves
+            independently. The AI tutor is deliberately constrained: it gives
+            <span class="highlightedWords"
+              >hints and asks pointed questions but never provides
+              answers</span
+            >. It supports voice input through always-on VAD (voice activity
+            detection) with three mic modes (off, ready, noisy environment).
+            Canvas state, session progress, and conversation history all persist
+            to Firestore, so you can close the tab and
+            <span class="highlightedWords"
+              >pick up exactly where you left off</span
+            >
+            on any device.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of about page -->
+
+    <div class="space-between-sections"></div>
+
+    <!-- What Makes It Different -->
+
+    <div class="section-container">
+      <div
+        class="content-about"
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
+        <div class="text-about">
+          <h1 class="section-header">What Makes It Different?</h1>
+          <p>
+            Most AI study tools just give you the answer. Pathfinder is built
+            around the idea that
+            <span class="highlightedWords"
+              >understanding comes from doing the work yourself</span
+            >. The AI is a guide, not a shortcut.
+            <br /><br />
+            <span class="highlightedWords">In The Zone</span> specifically
+            targets procrastination by breaking a 10-question problem set into
+            one question at a time, each with its own clean workspace and a
+            tutor that meets you where you are. The
+            <span class="highlightedWords">pre-fetched RAG context</span> means
+            responses are fast and grounded in your actual course material, not
+            generic knowledge.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of What Makes It Different -->
+
+    <div class="space-between-sections"></div>
+
+    <!-- How It's Built -->
+
+    <div class="section-container">
+      <div
+        class="content-about"
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
+        <div class="text-about">
+          <h1 class="section-header">How It's Built</h1>
+          <p>
+            The frontend is
+            <span class="highlightedWords">Next.js 16 with React 19</span>,
+            using Tldraw for the canvas layer. Auth is Firebase (Google OAuth +
+            email/password). Workspace state (drawings, session data) persists
+            to Firestore with
+            <span class="highlightedWords">debounced dirty-checking</span> to
+            minimize writes, and canvas snapshots save to R2.
+            <br /><br />
+            The backend is an
+            <span class="highlightedWords">Express 5 server</span> with a
+            two-phase RAG pipeline: upload phase (PDF parse, chunk at 500 tokens
+            with 50 overlap, embed via OpenAI text-embedding-3-small, upsert to
+            Pinecone) and query phase (embed the question, Pinecone top-K
+            search, Gemini generates the response). Audio transcription and
+            image summarization run in parallel to reduce latency.
+            Request-level observability tracks timing per step.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of How It's Built -->
+
+    <div class="space-between-sections"></div>
+
+    <!-- Skills Page -->
+
+    <div class="location-of-section">
+      <div class="location" id="stack"></div>
+    </div>
+
+    <div class="section-container">
+      <div
+        class="content-skills"
+        data-aos="fade-in"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
+        <h1 class="section-header" id="text-skills">Stack Used</h1>
+        <div class="graph-skill2">
+          <div class="skill">
+            <p>Next.js</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="skill">
+            <p>React</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="skill">
+            <p>TypeScript</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="skill">
+            <p>Express.js</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="skill">
+            <p>Firebase</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="skill">
+            <p>Cloud<br />Firestore</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="skill">
+            <p>Pinecone</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="skill">
+            <p>OpenAI</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="skill">
+            <p>Gemini</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="skill">
+            <p>Tldraw</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="skill">
+            <p>Cloudflare<br />R2</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="skill">
+            <p>Node.js</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Of skills page -->
+
+    <div class="space-between-sections"></div>
+
+    <!-- Pictures Page -->
+
+    <div class="location-of-section">
+      <div class="location" id="pictures"></div>
+    </div>
+
+    <div class="section-container">
+      <div class="content-pictures">
+        <div class="text-pictures">
+          <h1 class="section-header" id="text-pictures">Pictures</h1>
+        </div>
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">
+            &#8656;
+          </button>
+          <button class="carousel-button next" data-carousel-button="next">
+            &#8658;
+          </button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img
+                loading="lazy"
+                src="../pictures/pathfinder/Homepage.png"
+                alt="Home Page"
+              />
+            </li>
+            <li class="slide">
+              <img
+                loading="lazy"
+                src="../pictures/pathfinder/Creating_Workspace.png"
+                alt="Creating Workspace"
+              />
+            </li>
+            <li class="slide">
+              <img
+                loading="lazy"
+                src="../pictures/pathfinder/UploadCourseKnowledge.png"
+                alt="Upload Course Knowledge"
+              />
+            </li>
+            <li class="slide">
+              <img
+                loading="lazy"
+                src="../pictures/pathfinder/InTheZoneWorkspace.png"
+                alt="In The Zone Workspace"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Of Pictures page -->
+
+    <div class="space-between-sections"></div>
+
+    <!-- Footer -->
+
+    <div class="section-container">
+      <div class="content-footer">
+        <h1>M.P.K.</h1>
+        <h4>© Mohammad Pasha Khoshkebari 2026. All rights reserved.</h4>
+      </div>
+    </div>
+
+    <!-- End Of Footer -->
+
+    <script src="./projects_index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+  </body>
+</html>
