@@ -680,7 +680,7 @@ ul {
 }
 
 #current-projects {
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project {
@@ -765,6 +765,10 @@ ul {
   .graph-projects {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+  }
+
+  #current-projects {
+    grid-template-columns: 1fr;
   }
 
   .graph-projects {
